@@ -67,6 +67,7 @@ body, html{
         align-self: center;
         width: 20px;
         height: 20px;
+        margin-bottom: 2px;
       }
       div{
         font-size: 1rem;
@@ -85,7 +86,7 @@ body, html{
     grid-template-rows: 1fr 4fr;
   }
   .user-head{
-    padding-top: 20px;
+    padding-top: 3px;
     padding-left: 30px;
     display: grid;
     grid-template-rows: 1fr 1fr;
@@ -97,17 +98,19 @@ body, html{
   }
   .search{
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 3fr 1fr;
+    height: 100%;
+    place-content: center;
     .search-bar{
         display: grid;
         grid-template-columns: repeat(2, max-content);
         grid-template-rows: 30px;
         column-gap: 1rem;
+        place-items: center;
         svg{
             width: 25px;
             height: 20px;
-            align-self: center;
-            margin-bottom: 7px;
+            margin-top: 2px;
         }
         textarea{
             border: none;
@@ -118,9 +121,39 @@ body, html{
             width: 400px;
             height: 20px;
             border-radius: 50px;
-            align-self: center;
+            
         }
+        
+        
     }
+    .sub-noti{
+        display: grid;
+        grid-template-columns:repeat(3, max-content);
+        column-gap: 1rem;
+        svg{
+            width: 25px;
+            height: 20px;
+            margin-top: 5px;
+        }
+        .profile{
+            background: url("/media/heart_eyes.png");
+            background-size: contain;
+            background-position: center center center;
+            background-repeat: no-repeat;
+            align-self: start;
+            
+            width: 30px;
+            height: 40px;
+        }
+        .text{
+            align-self: center;
+            margin-bottom: 8px;
+            font-size: 1rem;
+            font-weight: 600;
+        }
+
+    }
+    
   }
   .user-body{
     background-color: $not-quite-grey;
