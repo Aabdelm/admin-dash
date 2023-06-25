@@ -94,11 +94,9 @@ body, html{
      
   }
   .content{
-    // TODO: INVESTIGATE CAUSE
-    overflow: hidden;
     display: grid;
     height: 100%;
-    grid-template-rows: 1fr 4fr;
+    grid-template-rows: max-content 1fr;
   }
   .user-head{
     padding-top: 3px;
