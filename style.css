@@ -83,7 +83,6 @@ body, html {
   align-self: center;
   width: 20px;
   height: 20px;
-  margin-bottom: 2px;
 }
 .option1 div {
   font-size: 1rem;
@@ -180,7 +179,6 @@ body, html {
   display: grid;
   grid-template-columns: 35% 1fr;
   grid-column: 1/-1;
-  grid-row: 2;
   align-items: center;
 }
 .user-greet .profile-info {
@@ -202,4 +200,34 @@ body, html {
 }
 .user-greet .profile-info h1 {
   font-size: 18px;
+}
+.user-greet .options button {
+  border: none;
+  background-color: #1992d4;
+  color: white;
+  width: 100px;
+  height: 30px;
+  border-radius: 15px;
+  font-weight: 500;
+}
+.user-greet .options {
+  display: grid;
+  grid-column: -1;
+  margin-right: 50px;
+  -moz-column-gap: 16px;
+       column-gap: 16px;
+  align-items: center;
+  grid-template-columns: repeat(3, 120px);
+}
+.user-greet .options button {
+  padding: 0 10px;
+  transition: 0.3s ease;
+}
+.user-greet .options button:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
+.user-greet .options button:active {
+  transform: scale(0.95);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }/*# sourceMappingURL=style.css.map */
