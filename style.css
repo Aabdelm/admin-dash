@@ -95,6 +95,7 @@ body, html {
 }
 
 .content {
+  overflow: hidden;
   display: grid;
   height: 100%;
   grid-template-rows: 1fr 4fr;
