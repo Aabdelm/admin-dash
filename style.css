@@ -154,6 +154,10 @@ body, html {
   stroke: #000;
   fill: #fff;
 }
+.search .sub-noti .clicked:hover {
+  stroke: #000;
+  fill: #fff;
+}
 .search .sub-noti svg {
   width: 25px;
   height: 20px;
@@ -163,6 +167,8 @@ body, html {
 .search .sub-noti svg:hover {
   cursor: pointer;
   transform: translateY(-3px);
+  stroke: #fff;
+  fill: #000;
 }
 .search .sub-noti .profile {
   align-self: start;

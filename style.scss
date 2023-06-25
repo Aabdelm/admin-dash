@@ -152,6 +152,10 @@ body, html{
         .clicked{
             stroke: #000;
             fill: #fff;
+            &:hover{
+                stroke: #000;
+                fill: #fff;
+            }
 
         }
         svg{
@@ -163,6 +167,8 @@ body, html{
             &:hover{
                 cursor: pointer;
                 transform: translateY(-3px);
+                stroke: #fff;
+                fill: #000;
             }
         }
         .profile{
