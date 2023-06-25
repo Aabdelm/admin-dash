@@ -1,5 +1,19 @@
 $sky-blue: #1992d4;
 $not-quite-grey: #e2e8f0;
+%pfp{
+    background: url("/media/question.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    align-self: start;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+     &:hover{
+        cursor: pointer;
+        transform: translateY(-3px);
+    }
+}
+
 *{
     font-family: 'Roboto', sans-serif;
 }
@@ -123,7 +137,11 @@ body, html{
             border-radius: 50px;
             
         }
-        
+        .profile{
+            @extend %pfp;
+            width: 40px;
+            height: 40px;
+        }
         
     }
     .sub-noti{
@@ -133,21 +151,21 @@ body, html{
         svg{
             width: 25px;
             height: 20px;
-            margin-top: 5px;
+            margin-top: 8px;
+            &:hover{
+                cursor: pointer;
+            }
         }
         .profile{
-            background: url("/media/heart_eyes.png");
-            background-size: contain;
-            background-position: center center center;
-            background-repeat: no-repeat;
+            @extend %pfp;
             align-self: start;
-            
-            width: 30px;
+            border-radius: 50%;
+            width: 40px;
             height: 40px;
         }
         .text{
             align-self: center;
-            margin-bottom: 8px;
+            margin-bottom: 5px;
             font-size: 1rem;
             font-weight: 600;
         }
@@ -158,5 +176,33 @@ body, html{
   .user-body{
     background-color: $not-quite-grey;
   }
-
-  
+  .user-greet{
+    display: grid;
+    grid-template-columns: 35% 1fr;
+    grid-column: 1/-1;
+    grid-row: 2;
+    align-items: center;
+    .profile-info{
+        display: grid;
+        grid-template-columns: max-content 1fr;
+        column-gap: 20px;
+        grid-row: 1/-1;
+        grid-column: 1;
+        .pfp-large{
+            @extend %pfp;
+            width: 50px;
+            height: 50px;
+            align-self: center;
+            
+        }
+        .textbox{
+            line-height: 5px;
+            align-self: first baseline;
+        }
+        h1{
+            font-size: 18px;
+        }
+    }
+    
+    
+}
