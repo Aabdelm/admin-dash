@@ -269,7 +269,7 @@ $not-quite-grey: #e2e8f0;
 .cards{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(3, minmax(0, 33%));
+    grid-template-rows: repeat(3, minmax(0, 1fr));
     gap: 15px;
     >div{
 
