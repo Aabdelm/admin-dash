@@ -7,10 +7,10 @@ $not-quite-grey: #e2e8f0;
     background-repeat: no-repeat;
     align-self: start;
     border-radius: 50%;
-    transition: opacity 0.3s ease;
+    transition: transform 0.3s ease;
      &:hover{
         cursor: pointer;
-        opacity: 0.7;
+        transform: translateY(-10px);
     }
 }
 
@@ -265,7 +265,7 @@ $not-quite-grey: #e2e8f0;
 .cards{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-rows: repeat(3, minmax(0, 33%));
     gap: 15px;
     >div{
 
@@ -276,12 +276,19 @@ $not-quite-grey: #e2e8f0;
         padding-left: 10px;
         border-radius: 4px;
         box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+        overflow: auto;
         h1{
             padding-top: 15px;
+            overflow: auto;
+            text-overflow: ellipsis;
+            white-space: nowrap;
             font-size: 1rem;
         }
         p{
+            overflow: auto;
+            text-overflow: ellipsis;
             font-size: 10px;
+            overflow: hidden;
             width: 130px;
         }
     }
