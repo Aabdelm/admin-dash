@@ -10,7 +10,7 @@ $not-quite-grey: #e2e8f0;
     transition: transform 0.3s ease;
      &:hover{
         cursor: pointer;
-        transform: translateY(-10px);
+        transform: translateY(-4px);
     }
 }
 
@@ -21,9 +21,9 @@ $not-quite-grey: #e2e8f0;
     
 }
 .container{
-    overflow: hidden;
-    height: 100vh;
+    
     display: grid;
+    grid-template-rows: 100vh;
     grid-template-columns: 1fr 4fr;
     box-sizing: border-box;
     
