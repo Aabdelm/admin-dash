@@ -316,12 +316,12 @@ $not-quite-grey: #e2e8f0;
 }
 .tabs{
     display: grid;
-    grid-template-rows: minmax(10px, 2fr) minmax(10px, 1fr);
+    grid-template-rows: minmax(10px, 1fr) minmax(10px, 1fr);
     grid-template-columns: 70%;
 }
 .announcements{
     display: grid;
-    grid-template-rows: 15% 85% ;
+    grid-template-rows: 20% 80% ;
 }
 .tab{
     display: grid;
@@ -368,9 +368,68 @@ $not-quite-grey: #e2e8f0;
     grid-area: content2;
 }
 .content3{
-    
     grid-area: content3;
-}
-.content3{
     border: none;
+}
+.trending{
+    display: grid;
+    grid-template-rows: auto 1fr;
+    
+    
+                         
+                         
+}
+.trending-tab{
+    display: grid;
+   @extend .tab;
+   grid-template-rows: repeat(4,minmax(0, 1fr));
+   grid-template-areas: ".  user1 ."
+                         ". user2 ."
+                         ". user3 ."
+                         ". user4 .";
+    grid-template-columns: 10% 80% 10%;
+    .user1{
+        grid-area: user1;
+    }
+    .user2{
+        grid-area: user2;
+    }
+    .user3{
+        grid-area: user3;
+    }
+    .user4{
+        grid-area: user4;
+    }
+    .user1,.user2,.user3,.user4{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        p{
+           
+            font-size: 12px;
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            color: gray;
+        }
+        
+    }
+    
+    
+}
+.profile1{
+    @extend %pfp;
+    width: 30px;
+    height: 30px;
+    
+    align-self: center;
+}
+.handle{
+    p{
+        &:nth-of-type(1){
+            color: black;
+            font-weight: 500;
+        }
+    }
 }
