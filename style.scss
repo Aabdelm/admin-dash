@@ -18,6 +18,7 @@ $not-quite-grey: #e2e8f0;
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     
 }
 .container{
@@ -25,7 +26,7 @@ $not-quite-grey: #e2e8f0;
     display: grid;
     grid-template-rows: 100vh;
     grid-template-columns: 1fr 4fr;
-    box-sizing: border-box;
+    
     
 }
 .sidebar{
@@ -103,7 +104,7 @@ $not-quite-grey: #e2e8f0;
     padding-left: 30px;
     display: grid;
     grid-template-rows: 1fr 1fr;
-    position: relative;
+    // position: relative;
     z-index: 10;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
     background-color: #ffffff;
@@ -192,8 +193,10 @@ $not-quite-grey: #e2e8f0;
     
   }
   .user-body{
+    display: grid;
+    grid-template-rows: 95%;
     background-color: $not-quite-grey;
-    padding-bottom: 15px;
+    // padding-bottom: 15px;
   }
   .user-greet{
     display: grid;
@@ -317,7 +320,8 @@ $not-quite-grey: #e2e8f0;
 .tabs{
     display: grid;
     grid-template-rows: minmax(10px, 1fr) minmax(10px, 1fr);
-    grid-template-columns: 70%;
+    grid-template-columns: 60%;
+    row-gap: 15px;
 }
 .announcements{
     display: grid;
@@ -326,7 +330,7 @@ $not-quite-grey: #e2e8f0;
 .tab{
     display: grid;
     grid-template-rows: repeat(3,minmax(0, 1fr));
-    grid-template-columns: 10% 80% 10%;
+    grid-template-columns: 10% 80% 5%;
     grid-template-areas: ". content1 ."
                          ". content2 ."
                          ". content3 .";
