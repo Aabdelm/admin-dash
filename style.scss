@@ -320,12 +320,16 @@ $not-quite-grey: #e2e8f0;
 .tabs{
     display: grid;
     grid-template-rows: minmax(10px, 1fr) minmax(10px, 1fr);
-    grid-template-columns: 60%;
+    grid-template-columns: 65%;
     row-gap: 15px;
 }
 .announcements{
     display: grid;
     grid-template-rows: 20% 80% ;
+    header{
+        align-self: center;
+        padding-top: 3px;
+    }
 }
 .tab{
     display: grid;
@@ -347,7 +351,7 @@ $not-quite-grey: #e2e8f0;
     text-align: start;
     word-break: break-all;
     overflow: hidden;
-    padding-top: 5px;
+   padding-bottom: 5px;
     
     border-bottom: solid $not-quite-grey 2px;
     header{
@@ -378,7 +382,7 @@ $not-quite-grey: #e2e8f0;
 .trending{
     display: grid;
     grid-template-rows: auto 1fr;
-    
+    row-gap: 7px;
     
                          
                          
